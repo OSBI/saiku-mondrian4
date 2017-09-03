@@ -1,0 +1,15 @@
+<features xmlns="http://karaf.apache.org/xmlns/features/v1.4.0" name="app-2.0.0">
+  <feature name="mondrian4" version="1.0">
+    <bundle>wrap:mvn:commons-lang/commons-lang/2.4</bundle>
+    <bundle>bundle:install -s wrap:mvn:commons-io/commons-io/1.4</bundle>
+    <bundle>wrap:mvn:eigenbase/eigenbase-xom/1.3.4</bundle>
+    <bundle>wrap:mvn:eigenbase/eigenbase-resgen/1.3.5</bundle>
+    <bundle>wrap:mvn:eigenbase/eigenbase-properties/1.1.4</bundle>
+    <!-- INSERT HTTP FEATURE DEPENDENCY HERE -->
+    <bundle>wrap:mvn:commons-collections/commons-collections/3.2.2</bundle>
+    <bundle>wrap:mvn:commons-pool/commons-pool/1.6</bundle>
+    <bundle>wrap:mvn:commons-dbcp/commons-dbcp/1.4</bundle>
+    <bundle>wrap:mvn:org.olap4j/olap4j/1.2.0</bundle>
+    <bundle>wrap:mvn:org.olap4j/olap4j-xmlaserver/1.2.0</bundle>
+  </feature>
+</features>
